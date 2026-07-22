@@ -464,14 +464,13 @@
     const nameDisplay = document.getElementById("visitor-name-display");
 
     // Check localStorage
+    // Check localStorage
     const savedName = localStorage.getItem("visitorName");
-
+    
     if (savedName) {
-        // Visitor has already entered their name
         visitorModal.style.display = "none";
-        nameDisplay.textContent = `Welcome, ${savedName}`;
+        nameDisplay.textContent = "Venky";
     } else {
-        // Show modal for new visitors
         visitorModal.style.display = "flex";
     }
 
